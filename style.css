@@ -1,0 +1,75 @@
+body{
+    background-image: url("./src/andesiteBackground.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section{
+    background-image: url("./src/smoothYellow.png");
+    background-repeat: repeat;
+    background-size: contain;
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: #ffffff;
+    width: 90%;
+    margin: 5%;
+    padding: 1%;
+}
+header{
+    width: 90%;
+    margin: 5%;
+    div{
+        background-color: red;
+        outline-style: groove;
+        outline-width: 5px;
+        outline-color: #ffffff;
+        width: 90%;
+        margin: 5%;
+    }
+    *{font-size: larger;}
+}
+ul{
+    list-style: url("./src/redstoneTrail.png");
+    margin: 20px;
+    padding: 20px auto;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover{color: orange;}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.notContainer{box-sizing: border-box;}
+#map::after{
+    display: flex;
+    flex-direction: column-reverse;
+    content: url("./src/CasaAutomatica.png");
+}
+@media screen and (max-width: 500px) {
+    section{
+        width: 105%;
+        margin: 0;
+        font-size: medium;
+    }
+    p, ul{
+        width: 85%;
+        margin: 15px;
+    }
+}
+@media screen and (max-width: 370px) {
+    ul{margin-left: 0;}
+}
